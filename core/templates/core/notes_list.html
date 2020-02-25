@@ -7,13 +7,14 @@
     </th>
     </tr>
   </thread>
-</table>
 <tbody>
   {% for note in notes.values %}
-  <tr><td>{{note.title}}</td><td>{{note.details}}</td></tr>
+  </a><tr><td>{{note.title}}</td><td>{{note.body}}</td></tr>
   {% endfor %}
 </tbody>
 </table>
 {% endblock %}
 
 <!-- <a href="{% url 'notes.detail' 1 %}"> -->
+
+  <!-- <a href="{% url 'notes.' %}"></a> -->
