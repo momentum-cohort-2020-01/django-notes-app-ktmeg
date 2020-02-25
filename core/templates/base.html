@@ -1,7 +1,22 @@
-<h2>NOTES</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block title %}<title>Document</title>{% endblock %}
+  <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta.25/shoelace.css">
+</head>
+<body>
+    {% block content %} {% endblock %}
+</body>
+</html>
+
+
+
+<!-- <h2>NOTES</h2>
 
 {% for note in notes.values %}
 
 <h3>{{note.title}}</h3>
 
-{% endfor %}
+{% endfor %} -->
