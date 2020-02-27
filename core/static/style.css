@@ -68,8 +68,8 @@ a:hover {
 
 
 .div{
-  height: 200px;
-  width: 200px;
+  height: 220px;
+  width: 220px;
   border: .5rem solid #086788; 
   border-radius: 50%;
   display: flex;
@@ -127,7 +127,7 @@ a:hover {
   font-family: 'Khand';
   font-size: .8rem;
   background-color: #086788;
-  margin: .3rem;
+  margin: .1rem;
   padding: .2rem;
   border-radius: 50%;
   display: flex;
@@ -159,4 +159,14 @@ a:hover {
 
 .createbutton:hover {
   cursor: pointer;
+}
+
+.fullnote {
+  font-family: 'Khand';
+  font-size: 1.5rem;
+  color: #086788;
+  align-items: baseline;
+  align-content: space-between;
+  text-align: center;
+  justify-content: center;
 }
