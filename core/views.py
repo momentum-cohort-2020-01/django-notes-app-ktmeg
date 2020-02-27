@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 
 from .models import Note
@@ -36,7 +36,7 @@ def edit_note(request, pk):
     return render(request, 'core/notes_new.html', {'form': form})
 
 def delete_note(request, pk):
-    note = Note.objects.get(pk=pk)
+    note = get_object_or_404(Note, pk=pk)
     note.delete()
     return redirect('/')
 # can't get any notes to delete!

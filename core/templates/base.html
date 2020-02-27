@@ -11,12 +11,10 @@
 </head>
 <body>
   <div class="headercontainer">
-  <div class="header">
-    <h2>
+  <a href="{% url 'notes-list' %}"> <div class="header">
       Notes
-      <!-- need to add home link to Notes -->
     </h2>
-  </div>
+  </div></a>
   <div>
     <a href="{% url 'notes_new' %}">
     <button class="createbutton">
