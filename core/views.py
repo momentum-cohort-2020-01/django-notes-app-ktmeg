@@ -36,7 +36,7 @@ def edit_note(request, pk):
     return render(request, 'core/notes_new.html', {'form': form})
 
 def delete_note(request, pk):
-    note = Note.objects.get(Note, pk=pk)
+    note = Note.objects.get(pk=pk)
     note.delete()
-    return redirect('notes-detail')
+    return redirect('/')
 # can't get any notes to delete!
