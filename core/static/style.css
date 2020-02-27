@@ -14,8 +14,8 @@ a {
 
 a:hover {
   cursor: pointer;
-
 }
+
 .container {
   width: 100%;
   display: flex;
@@ -29,6 +29,9 @@ a:hover {
   display: flex;
   justify-content: center;
   margin: 1rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 
 }
 
@@ -42,11 +45,28 @@ a:hover {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  margin: 1rem;
   height: 250px;
   width: 250px; 
-  border: .5rem solid #086788; 
+  border: .5rem solid #086788;
+  border-radius: 50%;
+  position: relative;
+  
+}
+
+.header:after {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  background: #FCFAFA;
+  z-index: -1;
   border-radius: 50%;
 }
+
+
 .div{
   height: 200px;
   width: 200px;
@@ -58,7 +78,7 @@ a:hover {
   text-align: center;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   margin: 1rem;
 
 }
@@ -80,31 +100,63 @@ a:hover {
   color: #FCFAFA;
   font-family: 'Khand';
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   display: flex;
   /* flex-direction: row;
   flex-wrap: wrap; */
   text-align: center;
   justify-content: center;
   align-items: center;
-
 }
 
-/* .timestamp {
+.timestamp {
   color: #FCFAFA;
   font-family: 'Khand';
   text-decoration: none;
   font-size: .8rem;
   display: flex;
-  /* flex-direction: row;
-  flex-wrap: wrap; */
-  /* text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  text-align: center;
   justify-content: center;
   align-items: center;
-
-} */ 
+} 
 
 .button {
   color: #FCFAFA;
+  font-family: 'Khand';
+  font-size: .8rem;
   background-color: #086788;
+  margin: .3rem;
+  padding: .2rem;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.createbutton {
+  color: #FCFAFA;
+  font-family: 'Khand';
+  font-size: 1.5rem;
+  background-color: #086788;
+  margin: .3rem;
+  padding: .5rem;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: .5rem;
+}
+
+.createbutton:hover {
+  cursor: pointer;
 }

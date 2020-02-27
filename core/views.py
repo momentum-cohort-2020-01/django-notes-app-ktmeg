@@ -32,5 +32,5 @@ def edit_note(request, pk):
             note = form.save()
             return redirect('notes-detail', pk=note.pk)
     else: 
-      form = NoteForm(instance=note)
+        form = NoteForm(instance=note)
     return render(request, 'core/notes_new.html', {'form': form})

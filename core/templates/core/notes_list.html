@@ -18,7 +18,9 @@
     <p class="body">
     {{note.body | truncatewords:4}}
     </p>
-    <a href="{% url 'edit_note' note.pk %}"> Edit</a>
+    <a href="{% url 'edit_note' note.pk %}"><button class="button">
+      Edit Note
+    </button></a>
   
  
   </div>
