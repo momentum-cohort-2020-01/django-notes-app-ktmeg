@@ -25,7 +25,7 @@ def note_new(request):
     return render(request, 'core/notes_new.html', {'form': form})
 
 def edit_note(request, pk):
-    note = Note.objects.get(pk=pk)
+    note = get_object_or_404(Note, pk=pk)
     if request.method == 'POST':
         form = NoteForm(request.POST, instance=note)
         if form.is_valid(): 
@@ -39,4 +39,3 @@ def delete_note(request, pk):
     note = get_object_or_404(Note, pk=pk)
     note.delete()
     return redirect('/')
-# can't get any notes to delete!

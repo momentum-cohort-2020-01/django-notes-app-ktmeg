@@ -26,6 +26,7 @@ a:hover {
 
 .headercontainer {
   width: 100%;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   margin: 1rem;
