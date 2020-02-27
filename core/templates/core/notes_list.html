@@ -1,24 +1,30 @@
 {% extends 'base.html' %}
 {% block content %}
+<div class="container">
 {% for note in notes %}
 
 
   <!-- </thread> -->
   <div class="div">
-  <a href="{% url 'notes-detail' note.pk %}" class="link">
+  <a href="{% url 'notes-detail' note.pk %}">
   
     <h4 class="titles">
     {{note.title}}
     </h4>
-  
-    <p class="body">
-    {{note.body}}
+    <p class="timestamp">
+      {{note.created_at}}
     </p>
   
-  </a>
+    <p class="body">
+    {{note.body | truncatewords:4}}
+    </p>
+    <a href="{% url 'edit_note' note.pk %}"> Edit</a>
+  
  
   </div>
-  {% endfor %} {% endblock %}
+  {% endfor %} 
+</div>
+  {% endblock %}
 
 <!-- <a href="{% url 'notes.detail' 1 %}"> -->
 

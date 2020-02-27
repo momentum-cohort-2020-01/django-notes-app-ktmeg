@@ -10,9 +10,17 @@
   {% block title %}<title>Document</title>{% endblock %}
 </head>
 <body>
+  <div class="headercontainer">
   <div class="header">
     <h2>Notes</h2>
   </div>
+  <div>
+    <a href="{% url 'notes_new' %}">
+    <button class="button">
+      New Note
+    </button></a>
+  </div>
+</div>
     {% block content %} {% endblock %}
 </body>
 </html>

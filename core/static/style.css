@@ -7,6 +7,7 @@
 body {
   background-color:#DBCDC6;
 }
+
 a {
   text-decoration: none;
 }
@@ -15,8 +16,24 @@ a:hover {
   cursor: pointer;
 
 }
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.headercontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+
+}
 
 .header{
+  
   color: #0FA3B1;
   font-family: 'Khand';
   font-size: 3rem;
@@ -36,10 +53,14 @@ a:hover {
   border: .5rem solid #086788; 
   border-radius: 50%;
   display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
   text-align: center;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin: 1rem;
+
 }
 
 .titles {
@@ -48,8 +69,8 @@ a:hover {
   text-decoration-line: none;
   font-size: 1.5rem;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -61,11 +82,29 @@ a:hover {
   text-decoration: none;
   font-size: 1.2rem;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1.5rem;
 
+}
+
+/* .timestamp {
+  color: #FCFAFA;
+  font-family: 'Khand';
+  text-decoration: none;
+  font-size: .8rem;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  /* text-align: center;
+  justify-content: center;
+  align-items: center;
+
+} */ 
+
+.button {
+  color: #FCFAFA;
+  background-color: #086788;
 }
